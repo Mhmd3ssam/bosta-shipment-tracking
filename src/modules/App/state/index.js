@@ -6,11 +6,11 @@ export const appSlice = createSlice({
     language: "ar",
   },
   reducers: {
-    cahngeLanguage: (state, { payload }) => {
+    setLanguage: (state, { payload }) => {
       state.language = payload;
     },
   },
 });
 
-export const { cahngeLanguage } = appSlice.actions;
+export const { setLanguage } = appSlice.actions;
 export const appSelector = (state) => state.app;
