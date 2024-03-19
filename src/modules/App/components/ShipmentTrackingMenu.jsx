@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { CardContent, Grid, Typography } from "@mui/material";
@@ -9,8 +8,8 @@ import SearchInput from "../../../shared/components/SearchInput";
 
 function ShipmentTrackingMenu() {
   const { t } = useTranslation("app");
+  const navigate = useNavigate();
 
-  const [shipmentNumber, setShipmentNumber] = useState();
   return (
     <Menu
       label="Shipment Tracking Menu"
@@ -35,9 +34,10 @@ function ShipmentTrackingMenu() {
           </Grid>
           <Grid item>
             <SearchInput
-              value={shipmentNumber}
-              onChange={(val) => {
-                setShipmentNumber(val);
+              onEnterPressed={(shipmentNumber) => {
+                navigate(
+                  `/tracking-shipments/shipment-number=${shipmentNumber}`
+                );
               }}
               label={t("trackShipment")}
               placeholder={t("shipmenNumber")}
