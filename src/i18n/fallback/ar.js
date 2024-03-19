@@ -6,6 +6,7 @@ const ar = {
   en: "EN",
   arabic: "العربية",
   english: "الانجليزية",
+  error: "خطأ",
 };
 
 export default ar;

@@ -6,6 +6,7 @@ const en = {
   en: "EN",
   arabic: "Arabic",
   english: "English",
+  error: "Error",
 };
 
 export default en;

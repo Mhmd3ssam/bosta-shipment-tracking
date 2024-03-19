@@ -35,13 +35,37 @@ function NavBar() {
       </Grid>
       <Grid item container justifyContent="center" alignItems="center" gap={3}>
         <Grid item>
-          <Typography>{t("mainPage")}</Typography>
+          <Typography
+            component="h6"
+            variant="body1"
+            fontWeight="bold"
+            color="#28304a"
+            sx={{ cursor: "pointer" }}
+          >
+            {t("mainPage")}
+          </Typography>
         </Grid>
         <Grid item>
-          <Typography>{t("prices")}</Typography>
+          <Typography
+            component="h6"
+            variant="body1"
+            fontWeight="bold"
+            color="#28304a"
+            sx={{ cursor: "pointer" }}
+          >
+            {t("prices")}
+          </Typography>
         </Grid>
         <Grid item>
-          <Typography>{t("sales")}</Typography>
+          <Typography
+            component="h6"
+            variant="body1"
+            fontWeight="bold"
+            color="#28304a"
+            sx={{ cursor: "pointer" }}
+          >
+            {t("sales")}
+          </Typography>
         </Grid>
       </Grid>
       <Grid item container justifyContent="space-between" alignItems="center">
@@ -49,7 +73,15 @@ function NavBar() {
           <ShipmentTrackingMenu />
         </Grid>
         <Grid item>
-          <Typography> {t("register")}</Typography>
+          <Typography
+            component="h6"
+            variant="body1"
+            fontWeight="bold"
+            color="#28304a"
+            sx={{ cursor: "pointer" }}
+          >
+            {t("register")}
+          </Typography>
         </Grid>
         <Grid item>
           <LanguagesMenu />

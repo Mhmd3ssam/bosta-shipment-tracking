@@ -22,22 +22,21 @@ function ShipmentTrackingMenu() {
           "&:hover": {
             cursor: "pointer",
           },
+          fontWeight: "bold",
         },
       }}
     >
       <CardContent>
         <Grid container direction="column" gap={1} width="300px" p={1}>
           <Grid item>
-            <Typography variant="subtitle1">
+            <Typography component="h6" variant="subtitle1">
               {t("trackYourShipment")}
             </Typography>
           </Grid>
           <Grid item>
             <SearchInput
               onEnterPressed={(shipmentNumber) => {
-                navigate(
-                  `/tracking-shipments/shipment-number=${shipmentNumber}`
-                );
+                navigate(`/tracking-shipments/${shipmentNumber}`);
               }}
               label={t("trackShipment")}
               placeholder={t("shipmenNumber")}

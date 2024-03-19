@@ -8,7 +8,9 @@ function AppContainer({ children }) {
         <NavBar />
         <Divider />
       </Grid>
-      <Grid item>{children}</Grid>
+      <Grid item height="80vh" p={2} margin="auto" width="100%">
+        {children}
+      </Grid>
     </Grid>
   );
 }

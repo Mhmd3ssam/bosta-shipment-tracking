@@ -9,8 +9,8 @@ export const ShipmentAPI = createApi({
   baseQuery: customBaseQuery,
   endpoints: (build) => ({
     getShipmens: build.query({
-      query: (shipmentID) => ({
-        url: `/shipments/track/${shipmentID}`,
+      query: (shipmentNumber) => ({
+        url: `/shipments/track/${shipmentNumber}`,
       }),
       transformResponse: (res) => res,
       providesTags: ["Shipment"],
