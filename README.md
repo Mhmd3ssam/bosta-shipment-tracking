@@ -2,45 +2,6 @@
 
 Bosta Shipment Tracking is a React application designed to track shipments efficiently. It utilizes Redux Toolkit for HTTP requests and state management, MUI for UI components, and i18n for multilingual support (Arabic and English). The project follows a modular architecture for better organization and scalability.
 
-## Folder Structure
-bosta-shipment-tracking
-  ├──  public
-    ├── index.html
-    └── ...
-  └──  src
-      ├──  assets
-      └── ...
-      ├──  helpers
-      │   ├── constants.js
-      │   ├── dateTime.js
-      │   ├── makeTheme.js
-      │   └── urls.js
-      ├──  i18n
-      │   └── ...
-      ├──  modules
-      │   ├──  app
-      │   │   ├──  components
-      │   │   │   └── ...
-      │   │   ├──  locales
-      │   │   │   └── ...
-      │   │   └──  views
-      │   │       └── ...
-      │   └──  shipment
-      │       ├──  components
-      │       │   └── ...
-      │       ├──  locales
-      │       │   └── ...
-      │       └──  views
-      │           └── ...
-      ├──  redux
-      │   └── ...
-      ├──  shared
-      │   └── ...
-      ├──  main
-      └── ...
-      ├── index.js
-      └── ...
-
 ## About the Project
 
 Bosta Shipment Tracking is built with the following technologies:
