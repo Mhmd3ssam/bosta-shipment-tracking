@@ -17,11 +17,12 @@ function Shipment() {
 
   const {
     isLoading,
+    isFetching,
     isError,
     data: shipment,
   } = useGetShipmensQuery(shipmentNumber);
 
-  if (isLoading) return <Loader />;
+  if (isLoading || isFetching) return <Loader />;
   if (isError) return <SeverError message={t("serverErrorMessage")} />;
   return (
     <Grid container direction="column" gap={5}>
@@ -29,7 +30,7 @@ function Shipment() {
         <ShipmentCard shipment={shipment} />
       </Grid>
       <Grid item width="85%" m="auto">
-        <ShipmentDetails shipment={shipment}/>
+        <ShipmentDetails shipment={shipment} />
       </Grid>
     </Grid>
   );

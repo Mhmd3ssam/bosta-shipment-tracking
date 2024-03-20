@@ -1,6 +1,7 @@
 import { appSelector } from "../state";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 import { Grid, Typography, Box } from "@mui/material";
 
@@ -13,6 +14,8 @@ import brandLogoAr from "../../../assets/logo/logo-ar.svg";
 function NavBar() {
   const { t } = useTranslation("app");
   const { language } = useSelector(appSelector);
+
+  const navigate = useNavigate();
 
   return (
     <Grid
@@ -31,6 +34,8 @@ function NavBar() {
           src={language === "ar" ? brandLogoAr : brandLogoEn}
           display="block"
           height={34}
+          onClick={() => navigate("/")}
+          sx={{ cursor: "pointer" }}
         />
       </Grid>
       <Grid item container justifyContent="center" alignItems="center" gap={3}>

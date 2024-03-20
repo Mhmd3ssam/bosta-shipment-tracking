@@ -34,7 +34,7 @@ function LanguagesMenu() {
       AnchorComponentProps={{
         size: "small",
         variant: "text",
-        children: language === LANGS.en ? t(LANGS.ar) : t(LANGS.en),
+        children: language === LANGS.en ? t(LANGS.en) : t(LANGS.ar),
         sx: {
           "&:hover": {
             cursor: "pointer",

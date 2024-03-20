@@ -7,6 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import Home from "./views/Home";
 import Theme from "./components/Theme";
 import AppContainer from "./components/AppContainer";
 
@@ -22,6 +23,7 @@ function AppRoot() {
           <AppContainer>
             <Routes>
               <Route path="tracking-shipments/*" element={<Shipment />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
           </AppContainer>

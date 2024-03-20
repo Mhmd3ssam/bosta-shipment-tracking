@@ -1,18 +1,10 @@
 import { useTranslation } from "react-i18next";
 
-import {
-  Grid,
-  Card,
-  CardContent,
-  Button,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Grid, Card, CardContent, Button, Typography } from "@mui/material";
 
 function ShipmentAdress({ shipment }) {
   const { t } = useTranslation("shipment");
 
-  console.log("shipment", shipment);
   return (
     <Grid container direction="column" gap={3} my={2} width="100%">
       <Grid item>
@@ -33,12 +25,16 @@ function ShipmentAdress({ shipment }) {
           <CardContent sx={{ flex: "1 0 auto" }}>
             <Grid container direction="column" gap={2}>
               <Grid item>
-                <Typography component="h6" variant="subtitle1">
+                <Typography component="h6" variant="body2">
                   {t("subportMessage")}
                 </Typography>
               </Grid>
               <Grid item>
-                <Button>{t("subportAction")}</Button>
+                <Button>
+                  <Typography component="span" variant="caption">
+                    {t("subportAction")}
+                  </Typography>
+                </Button>
               </Grid>
             </Grid>
           </CardContent>
