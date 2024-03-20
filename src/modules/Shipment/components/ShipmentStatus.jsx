@@ -37,7 +37,7 @@ function ShipmentStatus({
     },
     {
       title: t("deliveryTimeWithin"),
-      value: convertDateFormat(PromisedDate, language),
+      value: !PromisedDate ? "-" : convertDateFormat(PromisedDate, language),
     },
   ];
 

@@ -14,7 +14,7 @@ const en = {
   Friday: "Friday",
 
   //SHIPMENT_STATUS
-  TICKET_CREATED: "Ticket Created",
+  TICKET_CREATED: "Ticket created",
   PACKAGE_RECEIVED: "Package received",
   NOT_YET_SHIPPED: "Not yet shipped",
   OUT_FOR_DELIVERY: "Out for delivery",
@@ -22,6 +22,15 @@ const en = {
   DELIVERED: "Delivered",
   DELIVERED_TO_SENDER: "Deliverd to sender",
   WAITING_FOR_CUSTOMER_ACTION: "Waiting for customer action",
+  CANCELLED: "Cancelled",
+
+  shipmentDetails: "Shipment details",
+  shipmentAdress: "Shipment adress",
+
+  branch: "Branch",
+  date: "Date",
+  time: "Time",
+  details: "details",
 };
 
 export default en;

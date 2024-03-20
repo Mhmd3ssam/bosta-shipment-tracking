@@ -12,6 +12,9 @@ const ar = {
   Wednesday: "الأربعاء",
   Thursday: "الخميس",
   Friday: "الجمعة",
+
+  //  //SHIPMENT_STATUS
+
   TICKET_CREATED: "تم انشاء الشحنة",
   PACKAGE_RECEIVED: "تم استلام الشحنة من التاجر",
   NOT_YET_SHIPPED: "لم يتم شحنة بعد",
@@ -20,6 +23,15 @@ const ar = {
   DELIVERED: "تم التسليم",
   DELIVERED_TO_SENDER: "سلمت إلى المرسل",
   WAITING_FOR_CUSTOMER_ACTION: "في انتظار إجراء العميل",
+  CANCELLED: "تم إلغاء الشحنة",
+
+  shipmentDetails: "تفاصيل الشحنة",
+  shipmentAdress: "عنوان التسليم",
+
+  branch: "الفرع",
+  date: "التاريخ",
+  time: "الوقت",
+  details: "تفاصيل",
 };
 
 export default ar;
