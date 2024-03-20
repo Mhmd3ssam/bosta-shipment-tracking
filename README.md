@@ -5,24 +5,19 @@ Bosta Shipment Tracking is a React application designed to track shipments effic
 ## Folder Structure
 
 📁 bosta-shipment-tracking
-│
 ├── 📁 public
 │ ├── index.html
 │ └── ...
-│
 └── 📁 src
 ├── 📁 assets
 │ └── ...
-│
 ├── 📁 helpers
 │ ├── constants.js
 │ ├── dateTime.js
 │ ├── makeTheme.js
 │ └── urls.js
-│
 ├── 📁 i18n
 │ └── ...
-│
 ├── 📁 modules
 │ ├── 📁 app
 │ │ ├── 📁 components
@@ -31,7 +26,6 @@ Bosta Shipment Tracking is a React application designed to track shipments effic
 │ │ │ └── ...
 │ │ └── 📁 views
 │ │ └── ...
-│ │
 │ └── 📁 shipment
 │ ├── 📁 components
 │ │ └── ...
@@ -39,16 +33,12 @@ Bosta Shipment Tracking is a React application designed to track shipments effic
 │ │ └── ...
 │ └── 📁 views
 │ └── ...
-│
 ├── 📁 redux
 │ └── ...
-│
 ├── 📁 shared
 │ └── ...
-│
 ├── 📁 main
 │ └── ...
-│
 ├── index.js
 └── ...
 
