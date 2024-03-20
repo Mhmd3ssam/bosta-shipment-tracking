@@ -32,6 +32,10 @@ const ar = {
   date: "التاريخ",
   time: "الوقت",
   details: "تفاصيل",
+
+  subportMessage: "هل يوجد مشكله في شحنتك؟",
+  subportAction: "ابلاغ عن مشكلة",
+  addressNotFound: "العنوان غير متاح الان",
 };
 
 export default ar;

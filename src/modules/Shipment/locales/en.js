@@ -31,6 +31,10 @@ const en = {
   date: "Date",
   time: "Time",
   details: "details",
+
+  subportMessage: "Is there a problem with your shipment?",
+  subportAction: "Report a problem",
+  addressNotFound: "Address not found",
 };
 
 export default en;

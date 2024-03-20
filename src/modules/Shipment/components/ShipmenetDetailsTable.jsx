@@ -20,7 +20,7 @@ function ShipmenetDetailsTable({ shipment: { TransitEvents } }) {
   const tableLabels = [t("branch"), t("date"), t("time"), t("details")];
   return (
     <TableContainer component={Paper} sx={{ borderRadius: "10px", my: 2 }}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650 }} aria-label="shipment details table">
         <TableHead sx={{ bgcolor: "#fafbfa" }}>
           <TableRow>
             {tableLabels.map((cell, idx) => (
